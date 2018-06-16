@@ -29,4 +29,17 @@ public class Checksum {
         }
         return true;
     }
-}
+
+    public boolean checkMatrixReversed(int res[][],int resRev[][]){
+        counter=0;
+        for (int i=0;i<rows;i++){
+            for(int j=0;j<columns;j++){
+                if(res[i][j]==resRev[i][j])
+                    counter++;
+                else return false;
+            }
+        }
+        return true;
+    }
+ }
+

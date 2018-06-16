@@ -42,8 +42,8 @@ public class Application {
         Generator generator=new Generator();
         Matrix matrix=
               new Matrix(generator.generateMatrix(rows,columns),
-                      generator.generateMatrix(rows,columns),rows,columns);
-       matrix.allOperation();
+                      generator.generateMatrix(rows,columns),rows,columns); //generate matrix to tests
+       matrix.allOperation();  //make all operations add/subtract idk
     };
     private void showMenu(){
         System.out.println("\nMENU");
