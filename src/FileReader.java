@@ -1,20 +1,22 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.*;public class FileReader {
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-    public static void main(String[] args) throws IOException {
-        File file = new File("matrix.txt");
-        try (FileInputStream fis = new FileInputStream(file)) {
-            int content;
-            while ((content = fis.read()) != -1) {
-                // convert to char and display it
-                if ((char)content==' ')
-                    System.out.println(".");
-                else
-                System.out.print((char) content);
+public class FileReader {
+
+    public List<Integer> getDataFromFile(String fileName){
+        System.out.println("JESTEM");
+        Scanner scanner;
+        List<Integer> fileData=new ArrayList<>();
+            try {
+                scanner = new Scanner(new File(fileName));
+                while (scanner.hasNextInt()) {
+                    fileData.add(scanner.nextInt());
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+       return fileData;
     }
 }

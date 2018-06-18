@@ -1,13 +1,15 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Application {
     private Scanner scanner;
     private Matrix matrix;
-    private Checksum checksum;
+    private FileReader fileReader;
 
     public Application(){
-        scanner=new Scanner(System.in);
-        matrix=new Matrix();
+        this.scanner=new Scanner(System.in);
+        this.matrix=new Matrix();
+        this.fileReader=new FileReader();
     }
     public void chooseOption(){
         int option=0;
@@ -32,9 +34,18 @@ public class Application {
         }
     }
     private void fileData(){
-        System.out.println("Datafile");
+        List<Integer> fileData=fileReader.getDataFromFile("matrix.txt");
+        Matrix matrix=new Matrix(fileData);
+        matrix.allOperation();
     };
-    private void inputData(){ System.out.println("inputData");};
+    private void inputData(){
+        System.out.println("\nPodaj wymiary macierzy:");
+        int rows=scanner.nextInt();
+        int columns=scanner.nextInt();
+        Matrix matrix=new Matrix(rows,columns);
+        matrix.getMatrixFromInput();
+        matrix.allOperation();
+    };
     private void randomData(){
         System.out.println("\nPodaj wymiary macierzy:");
         int rows=scanner.nextInt();
