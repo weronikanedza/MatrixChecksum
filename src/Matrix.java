@@ -141,39 +141,33 @@ public class Matrix {
         System.out.println("-----------DODAWANIE----------");
         add(A,B,res);
         showAll();
-        if(checksum.checkMatrixAdd(A,B,res)) System.out.println("SUMY KONTROLNE PRAWIDLOWE");
-        else System.out.println("SUMY KONTROLNE NIEPRAWIDLOWE");
+        checksum.checkMatrixAdd(A,B,res);
 
         System.out.println("-----------ODEJMOWANIE----------");
         substract();
         showAll();
-        if(checksum.checkMatrixSubstract(A,B,res)) System.out.println("SUMY KONTROLNE PRAWIDLOWE");
-        else System.out.println("SUMY KONTROLNE NIEPRAWIDLOWE");
+        checksum.checkMatrixSubstract(A,B,res);
 
         System.out.println("----------ODWRÓCONE-------------");
-        aR=reverseMatrix(A,rowNumber,columnNumber);
-        bR=reverseMatrix(B,rowNumber,columnNumber);
+        aR=reverseMatrix(A,rowNumber,columnNumber); //reverse A before adding
+        bR=reverseMatrix(B,rowNumber,columnNumber); //reverse before adding
         addRev(aR,bR,resRev);
         showAllReversed();
+        showAll();
         resRev=reverseMatrix(resRev,columnNumber,rowNumber); //reverse again to compare
-        if(checksum.checkMatrixReversed(res,resRev)) System.out.println("SUMY KONTROLNE PRAWIDLOWE");
-        else System.out.println("SUMY KONTROLNE NIEPRAWIDLOWE");
+        checksum.checkMatrixReversed(res,resRev);
 
         if(rowNumber==columnNumber)  Bmulti=B;  //dont use genereated matrix if its square
 
         System.out.println("---------------MNOZENIE------------");
         multiply();
         showMultiply();
-        if(checksum.checkMatrixMultiply(A,Bmulti,resMulDiv)) System.out.println("SUMY KONTROLNE PRAWIDLOWE");
-        else System.out.println("SUMY KONTROLNE NIEPRAWIDLOWE");
 
         if(rowNumber==columnNumber) {
             System.out.println("--------DZIELENIE-------------");
             Bmulti = reverseMatrix(Bmulti, columnNumber, rowNumber); //reverse matrix B before multiply
             multiply();
             showMultiply();
-            if (checksum.checkMatrixMultiply(A, Bmulti, resMulDiv)) System.out.println("SUMY KONTROLNE PRAWIDLOWE");
-            else System.out.println("SUMY KONTROLNE NIEPRAWIDLOWE");
         }
     }
 
@@ -193,7 +187,7 @@ public class Matrix {
         showMatrix(aR,columnNumber,rowNumber);
         System.out.println("\nMacierz bR");
         showMatrix(bR,columnNumber,rowNumber);
-        System.out.println("\nMacierz Result");
+        System.out.println("\nMacierz ResultReversed");
         showMatrix(resRev,columnNumber,rowNumber);
     }
 

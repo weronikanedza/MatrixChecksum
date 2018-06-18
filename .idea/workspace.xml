@@ -3,16 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3dc99390-a07e-4c0c-8d3d-387fd8d9d6e0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/matrix.txt" afterPath="$PROJECT_DIR$/matrix.txt" />
       <change beforePath="$PROJECT_DIR$/out/production/SOB/Application.class" afterPath="$PROJECT_DIR$/out/production/SOB/Application.class" />
       <change beforePath="$PROJECT_DIR$/out/production/SOB/Checksum.class" afterPath="$PROJECT_DIR$/out/production/SOB/Checksum.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/SOB/FileReader.class" afterPath="$PROJECT_DIR$/out/production/SOB/FileReader.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/SOB/Generator.class" afterPath="$PROJECT_DIR$/out/production/SOB/Generator.class" />
       <change beforePath="$PROJECT_DIR$/out/production/SOB/Matrix.class" afterPath="$PROJECT_DIR$/out/production/SOB/Matrix.class" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" afterPath="$PROJECT_DIR$/src/Application.java" />
       <change beforePath="$PROJECT_DIR$/src/Checksum.java" afterPath="$PROJECT_DIR$/src/Checksum.java" />
-      <change beforePath="$PROJECT_DIR$/src/FileReader.java" afterPath="$PROJECT_DIR$/src/FileReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/Generator.java" afterPath="$PROJECT_DIR$/src/Generator.java" />
       <change beforePath="$PROJECT_DIR$/src/Matrix.java" afterPath="$PROJECT_DIR$/src/Matrix.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +23,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="25">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,8 +33,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1375">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,36 +54,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matrix.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="167" column="41" lean-forward="false" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+            <state relative-caret-position="363">
+              <caret line="189" column="52" lean-forward="false" selection-start-line="189" selection-start-column="52" selection-end-line="189" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
                 <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
                 <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
                 <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-                <element signature="method#substract#0;class#Matrix#0" expanded="false" />
                 <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-                <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-                <element signature="e#7382#7383#0" expanded="true" />
-                <element signature="e#7406#7407#0" expanded="true" />
-                <element signature="e#7435#7436#0" expanded="true" />
-                <element signature="e#7459#7460#0" expanded="true" />
-                <element signature="e#7490#7491#0" expanded="true" />
-                <element signature="e#7516#7517#0" expanded="true" />
+                <element signature="e#6747#6748#0" expanded="true" />
+                <element signature="e#6771#6772#0" expanded="true" />
+                <element signature="e#6800#6801#0" expanded="true" />
+                <element signature="e#6824#6825#0" expanded="true" />
+                <element signature="e#6855#6856#0" expanded="true" />
+                <element signature="e#6881#6882#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,12 +87,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checksum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Checksum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Checksum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="682">
+              <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+              <folding>
+                <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+                <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+                <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+                <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+                <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,10 +131,10 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/matrix.txt" />
         <option value="$PROJECT_DIR$/src/FileReader.java" />
-        <option value="$PROJECT_DIR$/src/Application.java" />
         <option value="$PROJECT_DIR$/src/Generator.java" />
-        <option value="$PROJECT_DIR$/src/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/Application.java" />
         <option value="$PROJECT_DIR$/src/Checksum.java" />
+        <option value="$PROJECT_DIR$/src/Matrix.java" />
       </list>
     </option>
   </component>
@@ -155,9 +144,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-591" />
     <option name="width" value="2326" />
     <option name="height" value="1258" />
   </component>
@@ -177,10 +165,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,6 +183,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,11 +343,13 @@
       <workItem from="1529154657884" duration="4267000" />
       <workItem from="1529235689776" duration="6421000" />
       <workItem from="1529309532946" duration="319000" />
+      <workItem from="1529314769024" duration="2363000" />
+      <workItem from="1529326266993" duration="2699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22975000" />
+    <option name="totallyTimeSpent" value="28037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,34 +361,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-591" y="0" width="2326" height="1258" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971016" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297491" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3227027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20411818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19563153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08721625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -457,18 +447,6 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Checksum.java</url>
-          <line>10</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Checksum.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Application.java</url>
           <line>8</line>
@@ -487,7 +465,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Checksum.java</url>
-          <line>25</line>
+          <line>114</line>
           <properties class="Checksum" method="checkMatrixReversed">
             <option name="EMULATED" value="true" />
           </properties>
@@ -499,6 +477,84 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="167" column="41" lean-forward="false" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
+            <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
+            <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
+            <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
+            <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Checksum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+            <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -531,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,7 +594,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+            <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,15 +622,13 @@
             <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
             <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
             <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-            <element signature="method#substract#0;class#Matrix#0" expanded="false" />
             <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7406#7407#0" expanded="true" />
-            <element signature="e#7435#7436#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7490#7491#0" expanded="true" />
-            <element signature="e#7516#7517#0" expanded="true" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,15 +678,13 @@
             <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
             <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
             <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-            <element signature="method#substract#0;class#Matrix#0" expanded="false" />
             <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7406#7407#0" expanded="true" />
-            <element signature="e#7435#7436#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7490#7491#0" expanded="true" />
-            <element signature="e#7516#7517#0" expanded="true" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,15 +725,13 @@
             <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
             <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
             <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-            <element signature="method#substract#0;class#Matrix#0" expanded="false" />
             <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7406#7407#0" expanded="true" />
-            <element signature="e#7435#7436#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7490#7491#0" expanded="true" />
-            <element signature="e#7516#7517#0" expanded="true" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -686,7 +740,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+            <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -730,7 +790,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+            <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -744,15 +810,13 @@
             <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
             <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
             <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-            <element signature="method#substract#0;class#Matrix#0" expanded="false" />
             <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7406#7407#0" expanded="true" />
-            <element signature="e#7435#7436#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7490#7491#0" expanded="true" />
-            <element signature="e#7516#7517#0" expanded="true" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -761,15 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,52 +838,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="25">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1375">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="63">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="167" column="41" lean-forward="false" selection-start-line="167" selection-start-column="41" selection-end-line="167" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
-            <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
-            <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
-            <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
-            <element signature="method#substract#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#showAllReversed#0;class#Matrix#0" expanded="false" />
-            <element signature="e#7382#7383#0" expanded="true" />
-            <element signature="e#7406#7407#0" expanded="true" />
-            <element signature="e#7435#7436#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7490#7491#0" expanded="true" />
-            <element signature="e#7516#7517#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Checksum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="682">
+          <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+          <folding>
+            <element signature="method#showChecksumMatrix#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfAddOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfSubstractOperation#0;class#Checksum#0" expanded="false" />
+            <element signature="method#controlSumOfReversed#0;class#Checksum#0" expanded="false" />
+            <element signature="method#checkMatrixSubstract#0;class#Checksum#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="189" column="52" lean-forward="false" selection-start-line="189" selection-start-column="52" selection-end-line="189" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Matrix#1;class#Matrix#0" expanded="false" />
+            <element signature="method#getMatrixFromFile#0;class#Matrix#0" expanded="false" />
+            <element signature="method#getMatrixFromInput#0;class#Matrix#0" expanded="false" />
+            <element signature="method#addRev#0;class#Matrix#0" expanded="false" />
+            <element signature="method#showMatrix#0;class#Matrix#0" expanded="false" />
+            <element signature="e#6747#6748#0" expanded="true" />
+            <element signature="e#6771#6772#0" expanded="true" />
+            <element signature="e#6800#6801#0" expanded="true" />
+            <element signature="e#6824#6825#0" expanded="true" />
+            <element signature="e#6855#6856#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -62,11 +62,4 @@ public class Application {
         System.out.println("2-input data");
         System.out.println("3-random data");
     }
-
-    private void check(int rows,int columns){
-        Checksum checksum=new Checksum(rows,columns);
-        if(checksum.checkMatrixAdd(matrix.getA(),matrix.getB(),matrix.getRes()))
-            System.out.println("SUMY KONTROLNE PRAWIDŁOWE");
-        else  System.out.println("SUMY KONTROLNE NIEPRAWIDŁOWE");
-    }
 }
