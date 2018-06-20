@@ -16,7 +16,12 @@ public class FileReader {
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
+                return null;
             }
-       return fileData;
+
+            if(fileData.size() > 2 && (fileData.get(0) * fileData.get(1)) * 2 + 2 == fileData.size())
+                return fileData;
+
+       return null;
     }
 }

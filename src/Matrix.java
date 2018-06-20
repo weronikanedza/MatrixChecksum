@@ -6,8 +6,7 @@ public class Matrix {
     private int bR[][],aR[][]; //reversed matrix A and B
     private int res[][],resRev[][],resMulDiv[][]; //res = result of operation on A and B /resRev reversed result
     private int Bmulti[][];
-    private int rowNumber;
-    private int columnNumber;
+    private int rowNumber, columnNumber;
     private Checksum checksum;
 
     public Matrix(){ }
@@ -15,21 +14,23 @@ public class Matrix {
     public Matrix(List<Integer> fileData){
         this(fileData.get(0),fileData.get(1));
         getMatrixFromFile(fileData);
+        this.aR = reverseMatrix(A, rowNumber, columnNumber);
+        this.bR = reverseMatrix(B, rowNumber, columnNumber);
     }
 
     public Matrix(int A[][],int B[][],int rowNumber,int columnNumber){
         this(rowNumber,columnNumber);
         this.A=A;
         this.B=B;
-        this.rowNumber=rowNumber;
-        this.columnNumber=columnNumber;
+        this.aR = reverseMatrix(A, rowNumber, columnNumber);
+        this.bR = reverseMatrix(B, rowNumber, columnNumber);
     }
 
     public Matrix(int rowNumber,int columnNumber){
         this.rowNumber=rowNumber;
         this.columnNumber=columnNumber;
-        this.res=new int[rowNumber][columnNumber];
-        this.resRev=new int[columnNumber][rowNumber];
+        this.res=new int[columnNumber][rowNumber];
+        this.resRev=new int[rowNumber][columnNumber];
         this.checksum=new Checksum(rowNumber,columnNumber);
         this.A=new int[rowNumber][columnNumber];
         this.B=new int[rowNumber][columnNumber];
@@ -75,20 +76,70 @@ public class Matrix {
         }
     }
 
-    public void add(int matrixA[][],int matrixB[][],int matrixRes[][]){
-        for (int i=0 ; i < rowNumber ; i++ ){
-            for (int j=0 ; j<columnNumber ; j++ )
-                matrixRes[i][j]=matrixA[i][j]+matrixB[i][j];
+    public int[] add(){
+        for (int i=0 ; i < columnNumber; i++ ){
+            for (int j=0 ; j < rowNumber ; j++ ) {
+                res[i][j] = A[i][j] + B[i][j];
+            }
         }
+
+        return checksum.checkMatrixAdd(A,B,res);
+    }
+
+    public int[] checkAdd(int[][] A, int [][] B, int[][] res){
+        this.A = A;
+        this.B = B;
+        this.aR = reverseMatrix(A, rowNumber, columnNumber);
+        this.bR = reverseMatrix(B, rowNumber, columnNumber);
+        this.res = res;
+        return checksum.checkMatrixAdd(A,B,res);
+    }
+
+    public int[] checkSub(int[][] A, int [][] B, int[][] res){
+        this.A = A;
+        this.B = B;
+        this.aR = reverseMatrix(A, rowNumber, columnNumber);
+        this.bR = reverseMatrix(B, rowNumber, columnNumber);
+        this.res = res;
+        return checksum.checkMatrixSubstract(A,B,res);
     }
     /*
      adding reversed matrix
      */
-    public void addRev(int matrixA[][],int matrixB[][],int matrixRes[][]){
-        for (int i=0 ; i < columnNumber ; i++ ){
-            for (int j=0 ; j<rowNumber ; j++ )
-                matrixRes[i][j]=matrixA[i][j]+matrixB[i][j];
+    public int[] addRev(){
+        aR=reverseMatrix(A,rowNumber,columnNumber); //reverse A before adding
+        bR=reverseMatrix(B,rowNumber,columnNumber); //reverse before adding
+
+        add();
+
+        for (int i=0 ; i < rowNumber ; i++ ){
+            for (int j=0 ; j < columnNumber ; j++ )
+                resRev[i][j]=aR[i][j]+bR[i][j];
         }
+
+        return checksum.checkMatrixReversed(res, reverseMatrix(resRev,columnNumber,rowNumber));
+    }
+
+    public int[] substract(){
+        for (int i=0 ; i < columnNumber ; i++ ){
+            for (int j=0 ; j< rowNumber ; j++ )
+                res[i][j]=A[i][j]-B[i][j];
+        }
+        return checksum.checkMatrixSubstract(A,B,res);
+    }
+
+    public int[] substractRev(){
+        aR=reverseMatrix(A,rowNumber,columnNumber); //reverse A before adding
+        bR=reverseMatrix(B,rowNumber,columnNumber); //reverse before adding
+
+        substract();
+
+        for (int i=0 ; i < rowNumber ; i++ ){
+            for (int j=0 ; j < columnNumber ; j++ )
+                resRev[i][j]=aR[i][j]-bR[i][j];
+        }
+
+        return checksum.checkMatrixReversed(res, reverseMatrix(resRev,columnNumber,rowNumber));
     }
 
     public void multiply(){
@@ -120,14 +171,6 @@ public class Matrix {
         Bmulti=generator.generateMatrix(columnNumber,rowNumber);
     }
 
-    public void substract(){
-        for (int i=0 ; i < rowNumber ; i++ ){
-            for (int j=0 ; j<columnNumber ; j++ )
-                res[i][j]=A[i][j]-B[i][j];
-        }
-    }
-
-
     public void showMatrix(int A[][],int row,int column){
         for (int i=0;i<row;i++) {
             for (int j = 0; j < column; j++) {
@@ -139,7 +182,7 @@ public class Matrix {
 
     public void allOperation(){
         System.out.println("-----------DODAWANIE----------");
-        add(A,B,res);
+        add();
         showAll();
         checksum.checkMatrixAdd(A,B,res);
 
@@ -149,9 +192,7 @@ public class Matrix {
         checksum.checkMatrixSubstract(A,B,res);
 
         System.out.println("----------ODWRÓCONE-------------");
-        aR=reverseMatrix(A,rowNumber,columnNumber); //reverse A before adding
-        bR=reverseMatrix(B,rowNumber,columnNumber); //reverse before adding
-        addRev(aR,bR,resRev);
+        addRev();
         showAllReversed();
         showAll();
         resRev=reverseMatrix(resRev,columnNumber,rowNumber); //reverse again to compare
@@ -172,10 +213,10 @@ public class Matrix {
     }
 
     public int[][] reverseMatrix(int matrix[][],int row,int column){
-        int temp[][]=new int[column][row];
+        int temp[][]=new int[row][column];
 
-        for(int i=0;i<row;i++){
-            for(int j=0;j<column;j++){
+        for(int i=0;i<column;i++){
+            for(int j=0;j<row;j++){
                 temp[j][i]=matrix[i][j];
             }
         }
@@ -208,6 +249,15 @@ public class Matrix {
         System.out.println("\nMacierz Result");
         showMatrix(resMulDiv,rowNumber,rowNumber);
     }
+
+    public int getRowNumber() {
+        return rowNumber;
+    }
+
+    public int getColumnNumber() {
+        return columnNumber;
+    }
+
     public int[][] getA() {
         return A;
     }
@@ -220,5 +270,32 @@ public class Matrix {
         return res;
     }
 
+    public int[][] getbR() {
+        return bR;
+    }
+
+    public int[][] getaR() {
+        return aR;
+    }
+
+    public int[][] getResRev() {
+        return resRev;
+    }
+
+    public int[] getAsum() {
+        return checksum.getAsum();
+    }
+
+    public int[] getBsum() {
+        return checksum.getBsum();
+    }
+
+    public int[] getResum() {
+        return checksum.getResum();
+    }
+
+    public int[] getReRevsum() {
+        return checksum.getReRevsum();
+    }
 }
 

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Pane prefHeight="750.0" prefWidth="200.0" style="-fx-background-color: grey;">
+         <children>
+            <Text fill="WHITE" layoutX="4.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadzanie danych:&#10;&#10;- aby wprowadzić je ręcznie wpisz rozmiar macierzy i nastęnie je uzupełnij&#10;&#10;- aby wprowadzić losowe dane wpisz rozmiar macierzy i kliknij &quot;Losuj&quot;&#10;&#10;- aby wprowdzić dane z pliku wpisz poniżej lokalizacje pliku i kliknij &quot;Otwórz&quot;" textAlignment="CENTER" wrappingWidth="191.732421875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="50.0" layoutY="521.0" mnemonicParsing="false" onAction="#createMartrixFromFile" prefHeight="35.0" prefWidth="100.0" text="Otwórz" textFill="#ff4d00">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="filePath" layoutX="17.0" layoutY="485.0" onKeyPressed="#createEmptyMatrix" onKeyReleased="#createEmptyMatrix" prefHeight="25.0" prefWidth="166.0" />
+         </children>
+      </Pane>
+      <AnchorPane fx:id="dataInput" layoutX="200.0" prefHeight="750.0" prefWidth="990.0">
+         <children>
+            <Pane prefHeight="750.0" prefWidth="325.0" style="-fx-background-color: DarkGrey;">
+               <children>
+                  <TextField fx:id="width" layoutX="106.0" layoutY="63.0" onAction="#createEmptyMatrix" onKeyPressed="#createEmptyMatrix" onKeyReleased="#createEmptyMatrix" prefHeight="25.0" prefWidth="30.0" />
+                  <Text layoutX="40.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Macierz:" />
+                  <Text layoutX="39.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj wymiary: szerokość x wysokość">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="147.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" />
+                  <TextField fx:id="height" layoutX="165.0" layoutY="63.0" onAction="#createEmptyMatrix" onKeyPressed="#createEmptyMatrix" onKeyReleased="#createEmptyMatrix" prefHeight="25.0" prefWidth="30.0" />
+                  <GridPane fx:id="viewMatrixA" layoutX="40.0" layoutY="120.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </GridPane>
+                  <GridPane fx:id="viewMatrixB" layoutX="40.0" layoutY="470.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </GridPane>
+                  <Text layoutX="40.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Macierz A" wrappingWidth="125.732421875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Macierz B" wrappingWidth="125.732421875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="209.0" layoutY="61.0" mnemonicParsing="false" onAction="#generateMatrix" prefHeight="30.0" prefWidth="90.0" text="Losuj" textFill="#ff4d00">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button layoutX="112.0" layoutY="98.0" mnemonicParsing="false" onAction="#reversMatrixA" prefHeight="0.0" text="Odwróć">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <GridPane fx:id="viewMatrixARev" layoutX="40.0" layoutY="120.0" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane fx:id="viewMatrixBRev" layoutX="40.0" layoutY="470.0" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <Button layoutX="112.0" layoutY="448.0" mnemonicParsing="false" onAction="#reversMatrixB" prefHeight="0.0" text="Odwróć">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="reversedBLabel" layoutX="173.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odwrócona" visible="false" wrappingWidth="125.732421875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="reversedALabel" layoutX="173.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odwrócona" visible="false" wrappingWidth="125.732421875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <GridPane fx:id="viewMatrixSumResult" layoutX="347.0" layoutY="121.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Text fx:id="errorText" fill="RED" layoutX="305.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="537.732421875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="340.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suma macierzy A i B" wrappingWidth="149.732421875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="340.0" layoutY="61.0" mnemonicParsing="false" onAction="#countSum" text="Oblicz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="340.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Róznica macierzy A i B" wrappingWidth="149.732421875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="340.0" layoutY="410.0" mnemonicParsing="false" onAction="#countSubstract" text="Oblicz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <GridPane fx:id="viewMatrixSubstractResult" layoutX="340.0" layoutY="470.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button layoutX="430.0" layoutY="61.0" mnemonicParsing="false" onAction="#checkSum" text="Sprawdź ponownie">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="430.0" layoutY="410.0" mnemonicParsing="false" onAction="#checkSubstract" text="Sprawdź ponownie">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="640.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Róznica odwróconych macierzy A i B" wrappingWidth="246.96193158626556">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="640.0" layoutY="410.0" mnemonicParsing="false" onAction="#countRevSubstract" text="Oblicz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <GridPane fx:id="viewReversedSubbstractMatrixResult" layoutX="640.0" layoutY="470.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Text layoutX="642.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suma odwróconych macierzy A i B" wrappingWidth="246.96193158626556">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="640.0" layoutY="61.0" mnemonicParsing="false" onAction="#countRevSum" text="Oblicz">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <GridPane fx:id="viewReversedSumMatrixResult" layoutX="642.0" layoutY="121.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Text fx:id="reversedSRLabel" layoutX="792.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odwrócona" wrappingWidth="125.732421875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="715.0" layoutY="61.0" mnemonicParsing="false" onAction="#reversMatrixSumResult" prefHeight="0.0" text="Odwróć">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <GridPane fx:id="viewUnreversedSumMatrixResult" layoutX="642.0" layoutY="121.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="viewUnreversedSubbstractMatrixResult" layoutX="640.0" layoutY="470.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Text fx:id="reversedSubRLabel" layoutX="792.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odwrócona" wrappingWidth="125.732421875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="715.0" layoutY="410.0" mnemonicParsing="false" onAction="#reversMatrixSubResult" prefHeight="0.0" text="Odwróć">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
